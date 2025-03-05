@@ -1,399 +1,387 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <title>reveal.js</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <link rel="stylesheet" href="dist/reset.css" />
-        <link rel="stylesheet" href="dist/reveal.css" />
-        <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
+    <title>BEM</title>
 
-        <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
-        <link rel="stylesheet" href="plugin/chalkboard/style.css" />
-        <link rel="stylesheet" href="plugin/customcontrols/style.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
 
-    <body>
-        <div class="reveal">
-            <div class="slides">
-                <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
-                </section>
-                <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
-                        <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
-                        </p>
-                    </section>
-                </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
-                    <img
-                        class="r-stretch"
-                        src="https://goqr.me/"
-                        data-type="qrcode" />
-                </section>
-                <section>
-                    <h1>New changes on the way!</h1>
-                </section>
-            </div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
+    <link rel="stylesheet" href="plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="plugin/customcontrols/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .reveal pre code {
+            font-size: 1.2em;
+            line-height: 1.5;
+            padding: 20px;
+            background: #2d2d2d;
+            border-radius: 8px;
+        }
+
+        .reveal h2, .reveal h3 {
+            color: #66CDAA;
+        }
+
+        .reveal p, .reveal li {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+
+            <section data-transition="zoom">
+                <h1>BEM: Методология верстки</h1>
+                <p class="block">Блок, Элемент, Модификатор</p>
+                <small>Кубрин Богдан</small>
+
+
+
+                
+            </section>
+
+
+            <section data-transition="fade">
+                <h2>Что такое BEM?</h2>
+                <p>BEM — это методология именования классов в HTML и CSS, которая помогает создавать:</p>
+                <ul>
+                    <li>Масштабируемый код</li>
+                    <li>Повторно используемый код</li>
+                    <li>Поддерживаемый код</li>
+                </ul>
+                <div class="card">
+                    <pre><code class="html">
+&lt;img class="card__image" src="image.jpg" alt="Пример" /&gt;
+&lt;div class="card__content"&gt;
+    &lt;h2 class="card__title"&gt;Заголовок&lt;/h2&gt;
+    &lt;p class="card__text"&gt;Текст карточки&lt;/p&gt;
+    &lt;button class="card__button card__button--primary"&gt;Кнопка&lt;/button&gt;
+&lt;/div&gt;
+            </code></pre>
+            </section>
+
+
+            <section data-transition="convex">
+                <h2>История создания</h2>
+                <ul>
+                    <li><strong>2007 год:</strong> Разработка началась в Яндексе.</li>
+                    <li><strong>2009 год:</strong> Первое публичное упоминание на конференции YaC.</li>
+                    <li><strong>2010 год:</strong> Выход первой версии документации.</li>
+                    <li><strong>2014 год:</strong> BEM становится открытой методологией.</li>
+                </ul>
+                <pre><code class="html">
+    
+    <div class="b-page">
+        <div class="b-page__header">Шапка</div>
+        <div class="b-page__content">Контент</div>
+    </div>
+            </code></pre>
+            </section>
+
+
+            <section data-transition="concave">
+                <h2>Для чего нужен BEM?</h2>
+                <ul>
+                    <li>Упрощение разработки и поддержки.</li>
+                    <li>Уменьшение количества ошибок.</li>
+                    <li>Ускорение процесса разработки.</li>
+                    <li>Улучшение взаимодействия в команде.</li>
+                </ul>
+                <pre><code class="html">
+    
+    <div class="button button--large">Кнопка 1</div>
+    <div class="button button--red">Кнопка 2</div>
+            </code></pre>
+            </section>
+
+
+            <section data-transition="slide">
+                <h2>Кто применяет BEM?</h2>
+                <ul>
+                    <li>Яндекс и все его сервисы.</li>
+                    <li>Google, Facebook, Twitter, Airbnb, BBC.</li>
+                    <li>Разработчики по всему миру.</li>
+                </ul>
+
+            </section>
+
+            
+            <section data-transition="fade">
+                <h2>Как BEM ушел в народ?</h2>
+                <ul>
+                    <li>Открытость методологии.</li>
+                    <li>Активное сообщество.</li>
+                    <li>Популяризация через конференции и статьи.</li>
+                    <li>Доказанная эффективность.</li>
+                </ul>
+                <pre><code class="html">
+    <div class="modal">
+        <div class="modal__header">Заголовок</div>
+        <div class="modal__body">Контент</div>
+        <div class="modal__footer">
+        <button class="modal__button modal__button--close">Закрыть</button>
+    </div>
+    </div>
+            </code></pre>
+            </section>
+
+            
+            <section data-transition="zoom">
+                <h2>Преимущества BEM</h2>
+                <ul>
+                    <li>Модульность.</li>
+                    <li>Повторное использование.</li>
+                    <li>Масштабируемость.</li>
+                    <li>Читаемость.</li>
+                    <li>Гибкость.</li>
+                </ul>
+                <pre><code class="html">
+    
+    <div class="user">
+        <img class="user__avatar" src="avatar.jpg" alt="Аватар">
+        <div class="user__info">
+        <h3 class="user__name">Максим Растегаев</h3>
+        <p class="user__bio">Описание профиля</p>
+    </div>
+    </div>
+            </code></pre>
+            </section>
+
+            
+            <section data-transition="convex">
+                <h2>Недостатки BEM</h2>
+                <ul>
+                    <li>Длинные имена классов.</li>
+                    <li>Необходимость дисциплины.</li>
+                    <li>Ограниченная гибкость.</li>
+                </ul>
+                <pre><code class="html">
+    
+    <div class="card card--large card--dark-theme">
+        <div class="card__header card__header--with-border">
+        <h2 class="card__title card__title--uppercase">Заголовок</h2>
+    </div>
+    </div>
+            </code></pre>
+            </section>
+
+            
+            <section data-transition="concave">
+                <h2>Заключение</h2>
+                <p>BEM — это мощная методология, которая помогает создавать качественный и поддерживаемый код.</p>
+                <p>Она активно используется в крупных проектах и имеет большое сообщество разработчиков.</p>
+                
+    
+    
+                    
+            </section>
+
+            
+            <section data-transition="zoom">
+                <h2>Спасибо за внимание!</h2>
+                <img src="bem.jpg" />
+
+            </section>
+
         </div>
+    </div>
 
-        <script src="dist/reveal.js"></script>
-        <script src="plugin/notes/notes.js"></script>
-        <script src="plugin/markdown/markdown.js"></script>
-        <script src="plugin/highlight/highlight.js"></script>
-        <script src="plugin/qrcode/qrcode.js"></script>
-        <script src="plugin/mermaid/mermaid.js"></script>
-        <script src="plugin/chalkboard/plugin.js"></script>
-        <script src="plugin/customcontrols/plugin.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/qrcode/qrcode.js"></script>
+    <script src="plugin/mermaid/mermaid.js"></script>
+    <script src="plugin/chalkboard/plugin.js"></script>
+    <script src="plugin/customcontrols/plugin.js"></script>
 
-        <script>
-            tailwind.config = {
-                corePlugins: {
-                    preflight: false,
-                },
-            }
-        </script>
-        <script>
-            // More info about initialization & config:
-            // - https://revealjs.com/initialization/
-            // - https://revealjs.com/config/
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+        }
+    </script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
 
-            const colors = {
-                blue0: 'rgb(61, 89, 161)',
-                blue: 'rgb(122, 162, 247)',
-                cyan: 'rgb(125, 207, 255)',
-                magenta: 'rgb(187, 154, 247)',
-                orange: 'rgb(255, 158, 100)',
-                yellow: 'rgb(224, 175, 104)',
-                green: 'rgb(158, 206, 106)',
-                teal: 'rgb(26, 188, 156)',
-                red: 'rgb(255, 117, 127)',
-                red1: 'rgb(219, 75, 75)',
-                fg: 'rgb(192, 202, 245)',
-                bg: 'rgb(26, 27, 38)',
-                transparent: '#00000000',
-            }
+        const colors = {
+            blue0: 'rgb(61, 89, 161)',
+            blue: 'rgb(122, 162, 247)',
+            cyan: 'rgb(125, 207, 255)',
+            magenta: 'rgb(187, 154, 247)',
+            orange: 'rgb(255, 158, 100)',
+            yellow: 'rgb(224, 175, 104)',
+            green: 'rgb(158, 206, 106)',
+            teal: 'rgb(26, 188, 156)',
+            red: 'rgb(255, 117, 127)',
+            red1: 'rgb(219, 75, 75)',
+            fg: 'rgb(192, 202, 245)',
+            bg: 'rgb(26, 27, 38)',
+            transparent: '#00000000',
+        }
 
-            Reveal.initialize({
-                hash: true,
-                // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [
-                    RevealMarkdown,
-                    RevealHighlight,
-                    RevealNotes,
-                    RevealMermaid,
-                    RevealChalkboard,
-                    RevealCustomControls,
-                ],
-                slideNumber: true,
-                customcontrols: {
-                    controls: [
-                        {
-                            icon: '<div></div>',
-                            title: 'Clear canvas (DEL)',
-                            action: 'RevealChalkboard.clear();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle chalkboard (B)',
-                            action: 'RevealChalkboard.toggleChalkboard();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle notes canvas (C)',
-                            action: 'RevealChalkboard.toggleNotesCanvas();',
-                        },
-                    ],
-                },
-                chalkboard: {
-                    boardmarkerWidth: 5,
-                    boardmarkers: [
-                        {
-                            color: colors.bg,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.fg,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.blue,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.red,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.green,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.yellow,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.teal,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.orange,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                    ],
-                    chalks: [
-                        {
-                            color: colors.bg,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.fg,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.blue,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.red,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.green,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.yellow,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.teal,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.orange,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                    ],
-                },
-                mermaid: {
-                    securityLevel: 'loose',
-                    theme: 'dark',
-                    themeVariables: {
-                        darkMode: true,
-                        textColor: colors.fg,
-                        background: colors.bg,
-                        mainBkg: colors.bg,
-                        lineColor: colors.fg,
+        Reveal.initialize({
+            hash: true,
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMermaid,
+                RevealChalkboard,
+                RevealCustomControls,
+            ],
+            slideNumber: true,
+            customcontrols: {
+                controls: [
+                    {
+                        icon: '<div></div>',
+                        title: 'Clear canvas (DEL)',
+                        action: 'RevealChalkboard.clear();',
                     },
+                    {
+                        icon: '<div></div>',
+                        title: 'Toggle chalkboard (B)',
+                        action: 'RevealChalkboard.toggleChalkboard();',
+                    },
+                    {
+                        icon: '<div></div>',
+                        title: 'Toggle notes canvas (C)',
+                        action: 'RevealChalkboard.toggleNotesCanvas();',
+                    },
+                ],
+            },
+            chalkboard: {
+                boardmarkerWidth: 5,
+                boardmarkers: [
+                    {
+                        color: colors.bg,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.fg,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.blue,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.red,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.green,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.yellow,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.teal,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.orange,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                ],
+                chalks: [
+                    {
+                        color: colors.bg,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.fg,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.blue,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.red,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.green,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.yellow,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.teal,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.orange,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                ],
+            },
+            mermaid: {
+                securityLevel: 'loose',
+                theme: 'dark',
+                themeVariables: {
+                    darkMode: true,
+                    textColor: colors.fg,
+                    background: colors.bg,
+                    mainBkg: colors.bg,
+                    lineColor: colors.fg,
                 },
-            })
-        </script>
-    </body>
-</html>
+            },
+        })
+    </script>
+</body>
 
+</html>
